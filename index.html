@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>참좋?�?�행 기획 ?�?�보??HUB</title>
+  <title>참좋은여행 기획 대시보드 HUB</title>
   
-  <!-- 모던 ???�트 (Pretendard) -->
+  <!-- 모던 폰트 (Pretendard) -->
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
   
-  <!-- ?��??�시???�결 -->
+  <!-- 스타일시트 연결 -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,30 +16,30 @@
   <div class="app-container" id="appContainer">
     
     <!-- ==========================================
-         1. 좌측 ?�마???�이?�바
+         1. 좌측 다이나믹 사이드바
          ========================================== -->
     <aside class="sidebar" id="sidebar">
       
-      <!-- ?�이?�바 ?�더 (?�털 로고) -->
+      <!-- 사이드바 헤더 (포털 로고) -->
       <div class="sidebar-header">
-        <div class="brand-wrapper" id="brandHomeBtn" title="?�으�??�동">
+        <div class="brand-wrapper" id="brandHomeBtn" title="홈으로 이동">
           <div class="brand-icon">
-            <img src="logo.png" alt="참좋?�?�행 로고" class="brand-logo-img" onerror="this.style.display='none'">
+            <img src="logo.png" alt="참좋은여행 로고" class="brand-logo-img" onerror="this.style.display='none'">
           </div>
           <div class="brand-text">
-            <span class="brand-title" id="portalTitle">참좋?�?�행 기획 ?�?�보??HUB</span>
+            <span class="brand-title" id="portalTitle">참좋은여행 기획 대시보드 HUB</span>
             <span class="brand-sub" id="portalSubtitle">VGT Cooperative Dashboard HUB</span>
           </div>
         </div>
         
-        <button class="btn-collapse" id="btnCollapse" title="?�이?�바 ?�기/?�치�? aria-label="?�이?�바 ?�기">
+        <button class="btn-collapse" id="btnCollapse" title="사이드바 열기/닫기" aria-label="사이드바 열기">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="15 18 9 12 15 6"></polyline>
           </svg>
         </button>
       </div>
 
-      <!-- ?�시�??�?�보??검?�창 -->
+      <!-- 대시보드 검색창 -->
       <div class="search-container">
         <div class="search-box">
           <div class="search-icon">
@@ -48,26 +48,26 @@
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
           </div>
-          <input type="text" id="searchInput" class="search-input" placeholder="?�?�보??검??(?�축?? /)" />
+          <input type="text" id="searchInput" class="search-input" placeholder="대시보드 검색 (단축키 /)" />
         </div>
       </div>
 
-      <!-- 카테고리 ?�터 ?�그 -->
+      <!-- 카테고리 필터 태그 -->
       <div class="category-filter" id="categoryFilter">
-        <!-- JS�??�적 ?�성 -->
+        <!-- JS로 동적 생성 -->
       </div>
 
-      <!-- ?�?�보??목록 -->
+      <!-- 대시보드 목록 -->
       <div class="dashboard-list-section">
-        <div class="section-label">?�?�보??목록</div>
+        <div class="section-label">대시보드 목록</div>
         <div id="dashboardList">
-          <!-- JS�??�적 ?�성 -->
+          <!-- JS로 동적 생성 -->
         </div>
       </div>
 
-      <!-- ?�이?�바 ?�터 (?�마 ?�환) -->
+      <!-- 사이드바 푸터 (테마 전환) -->
       <div class="sidebar-footer">
-        <button class="theme-toggle-btn" id="themeToggleBtn" title="?�면 ?�마 변�?>
+        <button class="theme-toggle-btn" id="themeToggleBtn" title="화면 테마 변경">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -79,18 +79,18 @@
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
           </svg>
-          <span id="themeText">?�크 모드</span>
+          <span id="themeText">다크 모드</span>
         </button>
       </div>
 
     </aside>
 
     <!-- ==========================================
-         2. 메인 ?�면 & ?�앱 뷰어
+         2. 메인 화면 & 웹앱 뷰어
          ========================================== -->
     <main class="main-area">
       
-      <!-- ?�단 뷰어 ?�더 �??�션 ?�바 -->
+      <!-- 상단 뷰어 헤더 & 액션 툴바 -->
       <header class="viewer-header">
         <div class="current-info">
           <div class="current-title-group">
@@ -100,72 +100,72 @@
         </div>
 
         <div class="toolbar-actions">
-          <!-- ???�체보기) 버튼 -->
-          <button class="tool-btn" id="btnHomeNav" title="?�체 ?�?�보??모아보기">
+          <!-- 전체보기 버튼 -->
+          <button class="tool-btn" id="btnHomeNav" title="전체 대시보드 모아보기">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
               <polyline points="9 22 9 12 15 12 15 22"></polyline>
             </svg>
-            <span>?�체보기</span>
+            <span>전체보기</span>
           </button>
 
           <!-- 즐겨찾기 고정 버튼 -->
-          <button class="tool-btn" id="btnTogglePin" title="즐겨찾기 ?�록/?�제">
+          <button class="tool-btn" id="btnTogglePin" title="즐겨찾기 등록/제거">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
             </svg>
             <span>즐겨찾기</span>
           </button>
 
-          <!-- ?�로고침 버튼 -->
-          <button class="tool-btn" id="btnRefresh" title="?�재 ?�?�보???�로고침">
+          <!-- 새로고침 버튼 -->
+          <button class="tool-btn" id="btnRefresh" title="현재 대시보드 새로고침">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="23 4 23 10 17 10"></polyline>
               <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
             </svg>
-            <span>?�로고침</span>
+            <span>새로고침</span>
           </button>
 
-          <!-- ?�체?�면 ?��? 버튼 -->
-          <button class="tool-btn primary" id="btnFullscreen" title="?�체?�면 ?�환">
+          <!-- 전체화면 전환 버튼 -->
+          <button class="tool-btn primary" id="btnFullscreen" title="전체화면 전환">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
             </svg>
-            <span>?�체?�면</span>
+            <span>전체화면</span>
           </button>
 
-          <!-- ????��???�기 버튼 -->
+          <!-- 새탭열기 버튼 -->
         </div>
       </header>
 
-      <!-- ?�앱 뷰어 컨테?�너 -->
+      <!-- 웹앱 뷰어 컨테이너 -->
       <div class="viewer-container" id="viewerContainer">
         
-        <!-- 로딩 ?�피???�버?�이 -->
+        <!-- 로딩 스피너 오버레이 -->
         <div class="loading-overlay hidden" id="loadingOverlay">
           <div class="spinner"></div>
-          <div class="loading-text">?�?�보?��? 불러?�는 중입?�다...</div>
+          <div class="loading-text">대시보드를 불러오는 중입니다...</div>
         </div>
 
-        <!-- 초기 ?�컴 / ?�치보드 카드 �?-->
+        <!-- 초기 웰컴 / 대시보드 카드 그리드 -->
         <div class="welcome-screen" id="welcomeScreen">
           <div class="welcome-hero">
-            <h1>참좋?�?�행 기획 ?�?�보???�브???�신 것을 ?�영?�니??</h1>
-            <p>분석 ?�?�보?��? ???�면?�서 빠르�?간편?�게 ?�환?�며 모니?�링?????�습?�다.<br>?�람???�하???�?�보??카드�??�릭?�세??</p>
+            <h1>참좋은여행 기획 대시보드 허브에 오신 것을 환영합니다</h1>
+            <p>분석 대시보드를 한 화면에서 빠르고 간편하게 전환하며 모니터링할 수 있습니다.<br>원하는 대시보드 카드를 클릭하세요</p>
           </div>
           <div class="dashboard-cards-grid" id="cardsGrid">
-            <!-- JS�??�적 ?�성 -->
+            <!-- JS로 동적 생성 -->
           </div>
         </div>
 
-        <!-- ?�제 ?�?�보?��? 로드?�는 ?�앱 iframe -->
+        <!-- 실제 대시보드를 로드하는 웹앱 iframe -->
         <iframe 
           id="dashboardFrame" 
           class="dashboard-iframe" 
           src="about:blank" 
           allow="fullscreen; clipboard-read; clipboard-write;"
           sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-downloads"
-          title="?�?�보??뷰어">
+          title="대시보드 뷰어">
         </iframe>
 
       </div>
@@ -174,10 +174,10 @@
 
   </div>
 
-  <!-- ?�스???�림 컴포?�트 -->
-  <div class="toast" id="toast">?�림 메시지</div>
+  <!-- 토스트 알림 컴포넌트 -->
+  <div class="toast" id="toast">알림 메시지</div>
 
-  <!-- ?�정 �????�크립트 -->
+  <!-- 설정 및 기타 스크립트 -->
   <script src="config.js"></script>
   <script src="app.js"></script>
 </body>
