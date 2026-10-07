@@ -1,79 +1,79 @@
 /**
  * ===================================================================
- *  ´ë½Ãº¸µå ¸ñ·Ï ¼³Á¤ ÆÄÀÏ (config.js)
+ *  ëŒ€ì‹œë³´ë“œ ëª©ë¡ ì„¤ì • íŒŒì¼ (config.js)
  * ===================================================================
  * 
- * - UI È­¸é ¾îµğ¿¡µµ GitHub °èÁ¤¸íÀÌ³ª À¯ÀÏÇÑ Á¤º¸°¡ ³ëÃâµÇÁö ¾Ê½À´Ï´Ù.
- * - ¿ÀÁ÷ "´ë½Ãº¸µå ÀÌ¸§(name)"°ú "¼³¸í(description)"¸¸ È­¸é¿¡ Ç¥½ÃµË´Ï´Ù.
+ * - UI í™”ë©´ ì–´ë””ì—ë„ GitHub ê³„ì •ëª…ì´ë‚˜ ìœ ì¼í•œ ì •ë³´ê°€ ë…¸ì¶œë˜ì§€ ì•ŠìŠµë‹ˆë‹¤.
+ * - ì˜¤ì§ "ëŒ€ì‹œë³´ë“œ ì´ë¦„(name)"ê³¼ "ì„¤ëª…(description)"ë§Œ í™”ë©´ì— í‘œì‹œë©ë‹ˆë‹¤.
  */
 
 const APP_CONFIG = {
-  // Æ÷ÅĞ »ó´Ü Å¸ÀÌÆ² ¼³Á¤
-  portalTitle: "ÂüÁÁÀº¿©Çà ±âÈ¹ ´ë½Ãº¸µå HUB",
+  // í¬í„¸ ìƒë‹¨ íƒ€ì´í‹€ ì„¤ì •
+  portalTitle: "ì°¸ì¢‹ì€ì—¬í–‰ ê¸°íš ëŒ€ì‹œë³´ë“œ HUB",
   portalSubtitle: "VGT Cooperative Dashboard HUB",
   
-  // ±âº» Å×¸¶ ('light' ¶Ç´Â 'dark')
+  // ê¸°ë³¸ í…Œë§ˆ ('light' ë˜ëŠ” 'dark')
   defaultTheme: "light",
 
-  // »õÅÇÀ¸·Î ¿­±â ¹öÆ° Ç¥Ãâ ¿©ºÎ
+  // ìƒˆì°½ìœ¼ë¡œ ì—´ê¸° ë²„íŠ¼ í‘œì¶œ ì—¬ë¶€
   allowOpenInNewTab: false,
 
-  // °íÁ¤ Ä«Å×°í¸® ÇÊÅÍ Å°¿öµå
-  categories: ["ÀüÃ¼", "±âÈ¹", "¸¶ÄÉÆÃ", "Çù·Â»ç", "Á¦ÈŞ"],
+  // ê³ ì • ì¹´í…Œê³ ë¦¬ í•„í„° í‚¤ì›Œë“œ
+  categories: ["ì „ì²´", "ê¸°íš", "ë§ˆì¼€íŒ…", "í˜‘ë ¥ì‚¬", "ì œíœ´"],
 
-  // ´ë½Ãº¸µå ¸ñ·Ï
+  // ëŒ€ì‹œë³´ë“œ ëª©ë¡
   dashboards: [
     {
       id: "route-booking",
-      name: "Ç×·Îº° ¿¹¾à",
-      category: "±âÈ¹",
-      description: "Ç×·Îº° ÁÖÂ÷º° ¿¬³âºñ ¿¹¾à ÃßÀÌ",
-      updateCycle: "¸ÅÁÖ È­¿äÀÏ",
+      name: "ë…¸ì„ ë³„ ì˜ˆì•½",
+      category: "ê¸°íš",
+      description: "ë…¸ì„ ë³„ ì£¼ì°¨ë³„ ì „ë…„ëŒ€ë¹„ ì˜ˆì•½ ì¶”ì´",
+      updateCycle: "ë§¤ì£¼ ì›”ìš”ì¼",
       icon: "bar-chart",
       url: "https://hhhvgt000-dot.github.io/route_booking/"
     },
     {
       id: "lead-time",
-      name: "¸®µåÅ¸ÀÓ(¸¶ÄÉÆÃ)",
-      category: "¸¶ÄÉÆÃ",
-      description: "¼±»ç, °¡°İ¹êµåº°, »óÇ°º° ¸®µåÅ¸ÀÓ, ¿¹¾à, °´´Ü°¡",
-      updateCycle: "¸ÅÁÖ È­¿äÀÏ",
+      name: "ë¦¬ë“œíƒ€ì„ ë¶„ì„(ë§ˆì¼€íŒ…)",
+      category: "ë§ˆì¼€íŒ…",
+      description: "íŒ€ë³„, ê°€ê²©ëŒ€ë³„, ìƒí’ˆë³„ ë¦¬ë“œíƒ€ì„, ì˜ˆì•½, ê°ë‹¨ê°€",
+      updateCycle: "ë§¤ì£¼ ì›”ìš”ì¼",
       icon: "activity",
       url: "https://hhhvgt000-dot.github.io/leadtime-dashboard-final/"
     },
     {
       id: "wow-booking",
-      name: "¸®µåÅ¸ÀÓ(±âÈ¹)",
-      category: "±âÈ¹",
-      description: "ÁÖÂ÷º° Àü³âºñ ¿¹¾à ÀÎ¿ø ¸®µåÅ¸ÀÓ",
-      updateCycle: "¸ÅÁÖ ¸ñ¿äÀÏ",
+      name: "ë¦¬ë“œíƒ€ì„ ë¶„ì„(ê¸°íš)",
+      category: "ê¸°íš",
+      description: "ì£¼ì°¨ë³„ íŒ€ë³„ ì˜ˆì•½ ì¸ì› ë¦¬ë“œíƒ€ì„",
+      updateCycle: "ë§¤ì£¼ ëª©ìš”ì¼",
       icon: "trending-up",
       url: "https://hhhvgt000-dot.github.io/leadtime-dashboard/"
     },
     {
       id: "profitability-master",
-      name: "¸¶½ºÅÍº° ¼öÀÍ¼º",
-      category: "±âÈ¹",
-      description: "¸¶½ºÅÍº° ¼öÀÍ¼º(»êÃâ¼öÀÍ, ÀÎ¿ø, ÀÎ´ç¼öÀÍ) ºĞ¼®",
-      updateCycle: "¸Å¿ù Áß¼ø~¸»(»êÃâ ¿Ï·á ½ÃÁ¡)",
+      name: "ë§ˆìŠ¤í„°ë³„ ìˆ˜ìµì„±",
+      category: "ê¸°íš",
+      description: "ë§ˆìŠ¤í„°ë³„ ìˆ˜ìµì„±(ì •ì‚°ìˆ˜ìµ, ì¸ì›, ì¸ë‹¹ìˆ˜ìµ) ë¶„ì„",
+      updateCycle: "ë§¤ì›” ì¤‘ìˆœ~ë§(ì •ì‚° ì™„ë£Œ ì‹œì )",
       icon: "dollar",
       url: "https://hhhvgt000-dot.github.io/master_profitability/"
     },
     {
       id: "partner-arrangements",
-      name: "Çù·Â»ç ¼ö¹èÇöÈ²",
-      category: "Çù·Â»ç",
-      description: "Çù·Â»çº°/Áö¿ªº° ÀÎ¿ø ¼ö¹è ¹× Áö»óºñ Áö±ŞÇöÈ² ºĞ¼®",
-      updateCycle: "¸Å¿ù Áß¼ø~¸»(»êÃâ ¿Ï·á ½ÃÁ¡)",
+      name: "í˜‘ë ¥ì‚¬ ìˆ˜ë°°í˜„í™©",
+      category: "í˜‘ë ¥ì‚¬",
+      description: "í˜‘ë ¥ì‚¬ë³„/ì§€ì—­ë³„ ì¸ì› ë° ì‹¤ì  í˜„í™© ë¶„ì„",
+      updateCycle: "ë§¤ì›” ì¤‘ìˆœ~ë§(ì „ì›” ì‹¤ì  ë°˜ì˜)",
       icon: "users",
       url: "https://pippapap.github.io/land_agent/"
     },
     {
       id: "affiliate-inflow",
-      name: "Á¦ÈŞ À¯ÀÔ ÇöÈ²",
-      category: "Á¦ÈŞ",
-      description: "Ç×·Îº° Á¦ÈŞ Ã¤³Î À¯ÀÔ ÀÎ¿ø ¹× ºñÁß ÇöÈ²",
-      updateCycle: "¸Å¿ù Áß¼ø~¸»(»êÃâ ¿Ï·á ½ÃÁ¡)",
+      name: "ì œíœ´ ìœ ì… í˜„í™©",
+      category: "ì œíœ´",
+      description: "ë…¸ì„ ë³„ ì œíœ´ ì±„ë„ ìœ ì… ì¸ì› ë° ë¹„ì¤‘ í˜„í™©",
+      updateCycle: "ë§¤ì›” ì´ˆ",
       icon: "network",
       url: "https://hhhvgt000-dot.github.io/partner-dashboard/"
     }
